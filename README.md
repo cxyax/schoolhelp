@@ -1,4 +1,4 @@
-# schoolhelp
+# 前言
 一个集合表白墙、失物招领、兼职和闲置二手买卖的云开发微信小程序
 # 校园生活圈小程序
 拥有 表白墙、失物招领、兼职、闲置物品等功能
@@ -17,3 +17,9 @@ wx.cloud.init({
 ```
 3. 创建对应的五个数据库集合（biaobai、found、lost、xianzhi、jianzhi）
 4. 将 cloudfunctions 文件下的四个文件上传云函数部署（右键点击，选择第三个选项“上传并部署：云端安装环境”）
+# 截图
+<img src="https://z3.ax1x.com/2021/03/29/cPYTzt.png">
+<img src="https://z3.ax1x.com/2021/03/29/cPYXdg.png">
+<img src="https://z3.ax1x.com/2021/03/29/cPYxij.png">
+![image](https://user-images.githubusercontent.com/58779674/112864155-24dad400-90ea-11eb-927c-c4ceb92a30fd.png)
+
