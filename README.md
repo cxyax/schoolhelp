@@ -1,7 +1,11 @@
 # 前言
 一个集合表白墙、失物招领、兼职和闲置二手买卖的云开发微信小程序
-# 校园生活圈小程序
-拥有 表白墙、失物招领、兼职、闲置物品等功能
+# 校园服务小程序
+拥有 表白墙、失物招领、兼职、闲置物品等功能，无后台，云开发，只需要搭建云数据库即可
+
+## 开发初衷
+开发本小程序的初衷是适应主小程序（校园骑士综合服务）
+<img src="https://z3.ax1x.com/2021/03/29/cPtiLT.png">
 
 ## 基于云开发（参考文档）
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
@@ -21,5 +25,5 @@ wx.cloud.init({
 <img src="https://z3.ax1x.com/2021/03/29/cPYTzt.png">
 <img src="https://z3.ax1x.com/2021/03/29/cPYXdg.png">
 <img src="https://z3.ax1x.com/2021/03/29/cPYxij.png">
-![image](https://user-images.githubusercontent.com/58779674/112864155-24dad400-90ea-11eb-927c-c4ceb92a30fd.png)
+<img src="https://z3.ax1x.com/2021/03/29/cPtSWn.png">
 
