@@ -1,0 +1,176 @@
+page {
+  /* background-image: url('http://rose-ccc.gitee.io/imgbed/background/3.jpg'); */
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: fixed; /*设置背景图片静止 */
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: auto;
+}
+
+.box {
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(0, 168, 243, 0.2); */
+  width: 84vw;
+  padding: 3vw;
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.biaobai_text{
+  margin-left:10rpx;
+}
+
+.box:last-of-type{
+  margin-bottom: 30rpx;
+}
+
+.info {
+  text-align: justify;
+  margin: 10rpx 20rpx;
+}
+
+.box_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete {
+  color: red;
+  margin: 0 20rpx;
+}
+
+.writer {
+  text-align: right;
+  margin-right: 10rpx;
+}
+
+.title {
+  font-weight: bolder;
+  margin-right: 10rpx;
+}
+
+.send {
+  width: 300rpx;
+  height: 100rpx;
+  position: fixed;
+  margin: auto;
+  bottom: 80rpx;
+  right: 0;
+  left: 0;
+}
+
+.send:active {
+  width: 262.5rpx;
+  height: 87.5rpx;
+  position: fixed;
+  margin: auto;
+  bottom: 86.25rpx;
+  right: 0;
+  left: 0;
+}
+
+.send_bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.send_box {
+  width: 70vw;
+  height: 680rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  height: 100rpx;
+  background-color: #00a8f3;
+  font-weight: bolder;
+  font-size: 40rpx;
+  text-align: center;
+  color: white;
+  line-height: 100rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.center input {
+  width: 90%;
+  border: 2rpx grey solid;
+  border-radius: 5rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  padding: 5rpx;
+}
+
+textarea {
+  width: 90%;
+  border: 2rpx grey solid;
+  border-radius: 5rpx;
+  margin: auto;
+  margin-top: 20rpx;
+  padding: 5rpx;
+}
+
+.send_button {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+
+button {
+  border: none;
+}
+
+.send_button button {
+  width: 50%;
+  background-color: #38baf7;
+  color: white;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.send_button button:active {
+  width: 50%;
+  background-color: #00a8f3;
+  color: white;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.b1 {
+  border-bottom-right-radius: 0;
+}
+
+.b1:active {
+  border-bottom-right-radius: 0;
+}
+
+.b2 {
+  border-bottom-left-radius: 0;
+}
+
+.b2 {
+  border-bottom-left-radius: 0;
+}

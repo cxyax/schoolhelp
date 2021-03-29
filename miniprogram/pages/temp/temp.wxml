@@ -1,0 +1,42 @@
+<block wx:if="{{type=='work'}}">
+  <view>
+    <view class="title">{{item.gangwei}}</view>
+    <view class="text">{{item.didian}}</view>
+    <view class="box">
+      <view class="text">{{item.gongsi}}</view>
+      <view class="text" style="color:red">{{item.daiyu}}</view>
+    </view>
+    <view class="line"></view>
+    <view class="text" wx:if="{{item.neirong}}">工作内容:
+      <text>\n{{item.neirong}}</text>
+    </view>
+    <view class="text" wx:if="{{item.shijian}}">工作时间：
+      <text>\n{{item.shijian}}</text>
+    </view>
+    <view class="text" wx:if="{{item.yaoqiu}}">应聘要求：
+      <text>\n{{item.yaoqiu}}</text>
+    </view>
+    <view class="text" style="text-align:right;margin-top:15rpx;">发布者:{{item.writer}}</view>
+    <view class="text" style="text-align:right">请联系:{{item.call}}</view>
+  </view>
+</block>
+<block wx:else>
+  <view>
+    <view class="title">{{item.name}}</view>
+    <view class="text">卖家：{{item.pName}}</view>
+    <view class="text">卖家微信：{{item.pWechat}}</view>
+    <view class="box">
+      <view class="text">卖家电话：{{item.pCall}}</view>
+      <view class="text" style="color:red">{{item.price}}</view>
+    </view>
+    <view class="line"></view>
+    <view class="text">
+      <text>{{item.info}}</text>
+    </view>
+    <block wx:key="index" wx:for="{{item.fileIDs}}">
+      <view style="margin:auto;width:600rpx;">
+        <image src="{{item}}" mode="aspectFill" data-img='{{item}}' bindtap="previewImg"></image>
+      </view>
+    </block>
+  </view>
+</block>

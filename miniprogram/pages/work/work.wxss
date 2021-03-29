@@ -1,0 +1,35 @@
+.line {
+  width: 90vw;
+  border: 1rpx grey solid;
+  position: relative;
+  margin: 10rpx 0;
+  left: -5vw
+}
+
+.box {
+  border-radius: 20rpx;
+  background: white;
+  margin: auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 20rpx 5vw;
+  width: 80vw;
+  line-height: 60rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 40rpx;
+}
+
+.location {
+  color: grey;
+}
+
+.price {
+  color: red;
+  text-align: right;
+  font-weight: bolder;
+  line-height: 25rpx
+}

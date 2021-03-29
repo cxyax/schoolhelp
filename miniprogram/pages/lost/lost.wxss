@@ -1,0 +1,169 @@
+.tab-h {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 3vh;
+  font-weight: bolder;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+swiper {
+  margin-top: 70rpx;
+  height: 94vh;
+}
+
+.tab-item {
+  width: 250rpx;
+  text-align: center;
+  margin: 0 36rpx;
+  color: rgb(156, 156, 156);
+  font-size: 30rpx;
+}
+
+.tab-item.active {
+  width: 250rpx;
+  color: rgb(65, 65, 65);
+  /* border-bottom: 5rpx blue solid; */
+}
+
+.box {
+  border-radius: 20rpx;
+  padding: 3vw;
+  background-color: white;
+  width: 84vw;
+  margin: auto;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 10rpx 10rpx 10rpx rgba(0, 0, 0, 0.2);
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  justify-content: space-between;
+}
+
+.touxiang {
+  border-radius: 50%;
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 15rpx 0 0;
+}
+
+.call {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bolder;
+  line-height: 60rpx;
+}
+
+.line {
+  margin: 10rpx 0;
+  position: relative;
+  left: -3vw;
+  width: 90vw;
+  border: 1rpx #e6e3e3 solid;
+}
+
+.info {
+  width: 100%;
+  line-height: 40rpx;
+  text-align: justify;
+}
+
+.box_bottom {
+  margin: 10rpx 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.delete {
+  color: red;
+}
+
+.time {
+  text-align: right;
+  margin-right: 10rpx;
+  color: grey;
+  font-size: 20rpx;
+}
+
+.img_box {
+  white-space: nowrap;
+  margin-top: 20rpx;
+}
+
+.img {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 20rpx;
+  border-radius: 15rpx;
+  border: 5rpx black solid;
+}
+
+.send {
+  width: 300rpx;
+  height: 100rpx;
+  position: fixed;
+  margin: auto;
+  bottom: 80rpx;
+  right: 0;
+  left: 0;
+}
+
+.send:active {
+  width: 262.5rpx;
+  height: 87.5rpx;
+  position: fixed;
+  margin: auto;
+  bottom: 86.25rpx;
+  right: 0;
+  left: 0;
+}
+
+.show_send {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+}
+
+.show_button {
+  height: 200rpx;
+  position: fixed;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 200rpx;
+  justify-content: space-around;
+}
+
+.show_button button {
+  width: 350rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 150rpx;
+}

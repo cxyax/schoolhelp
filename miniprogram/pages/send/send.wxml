@@ -1,0 +1,109 @@
+<view class="all">
+  <block wx:if="{{type=='xianzhi'}}">
+    <view class="box">
+      <view class="box_top">个人信息</view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">称呼</view>
+        <input placeholder="请输入你的称呼" bindinput="pName"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">手机号</view>
+        <input placeholder="请输入你的手机号" bindinput="pCall"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">微信号</view>
+        <input placeholder="请输入你的微信号" bindinput="pWechat"></input>
+      </view>
+    </view>
+    <view class="box">
+      <view class="box_top">商品信息</view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">商品名称</view>
+        <input placeholder="请输入商品名称" bindinput="name"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">商品价格</view>
+        <input placeholder="请输入商品价格" bindinput="price"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">商品图片</view>
+        <scroll-view scroll-x="true" class="images_box">
+          <block wx:key="imgbox" wx:for="{{imgbox}}">
+            <view class='img-box'>
+              <image class='img' src='{{item}}' mode="aspectFill"></image>
+              <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+                <image class='img' src='../../images/delete.png'></image>
+              </view>
+            </view>
+          </block>
+          <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<5}}">
+            <image class='img' src='../../images/add_images.png'></image>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">商品介绍</view>
+        <textarea placeholder="请输入商品介绍" bindinput="info"></textarea>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="box">
+      <view class="box_top" wx:if="{{type=='lostlost'}}">我丢东西了(*￣(エ)￣)</view>
+      <view class="box_top" wx:else>看我捡到了个啥(′▽`〃)</view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">物品名称</view>
+        <input placeholder="请输入物品名称" bindinput="name"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">物品图片</view>
+        <scroll-view scroll-x="true" class="images_box">
+          <block wx:key="imgbox" wx:for="{{imgbox}}">
+            <view class='img-box'>
+              <image class='img' src='{{item}}' mode="aspectFill"></image>
+              <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+                <image class='img' src='../../images/delete.png'></image>
+              </view>
+            </view>
+          </block>
+          <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<5}}">
+            <image class='img' src='../../images/add_images.png'></image>
+          </view>
+        </scroll-view>
+      </view>
+      <view class="line"></view>
+      <view class="box_center" wx:if="{{type=='lostlost'}}">
+        <view class="left">详细说明</view>
+        <textarea placeholder="请输入丢失的过程，时间地点之类的..." bindinput="info"></textarea>
+      </view>
+      <view class="box_center" wx:else>
+        <view class="left">详细说明</view>
+        <textarea placeholder="请输入捡到的过程，时间地点之类的..." bindinput="info"></textarea>
+      </view>
+    </view>
+    <view class="box">
+      <view class="box_top">联系方式</view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">手机号</view>
+        <input placeholder="请输入你的手机号" bindinput="pCall"></input>
+      </view>
+      <view class="line"></view>
+      <view class="box_center">
+        <view class="left">微信号</view>
+        <input placeholder="请输入你的微信号" bindinput="pWechat"></input>
+      </view>
+    </view>
+  </block>
+</view>
+
+<button bindtap='fb'>发布</button>

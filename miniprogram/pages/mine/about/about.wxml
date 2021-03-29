@@ -1,0 +1,13 @@
+<view class="about_logo">
+  <image src='/images/logo.jpg'></image>
+ </view>
+ <view class='about_data'>
+   <view>校园服务,是一个综合表白墙，失物招领，兼职和闲置买卖的综合服务平台，由 自由仁科技 开发，感谢您的使用！</view>
+  </view>
+  
+<view class='about_title'>
+  联系我们
+</view>
+<view class='lianxi_list' bindtap='makePhone'>合作电话: 187-5402-6672</view>
+<view class='lianxi_list border-b'>E-mail: freeroot@163.com</view>
+<view class='lianxi_list border-b' bindtap="dizhi">地址：山东省临沂市河东区临沂职业学院新校区</view>

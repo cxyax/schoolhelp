@@ -1,0 +1,34 @@
+page{
+  background-color: #c5ebfc;
+  padding: 20rpx;
+  width: 90vw;
+  margin: auto
+}
+.line{
+  width: 100vw;
+  border: 1rpx grey solid;
+  position: relative;
+  left: -5vw;
+  margin: 15rpx 0;
+}
+.title{
+  font-size: 50rpx;
+  font-weight: bolder;
+  margin-bottom: 10rpx;
+}
+.text{
+  line-height: 60rpx;
+  margin-bottom: 15rpx;
+}
+.box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+image{
+  width: 600rpx;
+  height: 400rpx;
+  border: 5rpx black solid;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+}

@@ -1,0 +1,33 @@
+.about_logo{
+	margin:0px auto;
+	background-color: #fff;
+}
+.about_logo image{
+	width: 400rpx;
+	height: 400rpx;
+	display: block;
+	margin:0px auto;
+}
+
+.about_data{
+	background-color: #fff;
+	border-top: 1rpx solid #ccc;
+}
+.about_data view{
+	width: 95%;
+	margin: 0px auto;
+	padding: 20rpx;
+}
+
+.about_title{
+	margin: 30rpx 10rpx;
+}
+.lianxi_list{
+	height: 80rpx;
+	line-height: 80rpx;
+	background-color: #fff;
+	padding-left: 20rpx;
+}
+.border-b{
+	border-top: 1px solid #ccc;
+}

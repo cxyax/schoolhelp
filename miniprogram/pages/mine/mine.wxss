@@ -1,0 +1,140 @@
+page {
+  background-color: #f7f7f7;
+}
+
+.info {
+  /* background-color: #00a8f3; */
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.info button{
+  height: 70rpx;
+  line-height: 70rpx;
+	background-color: #00a8f3;
+	border: none;
+	color: #fff;
+}
+.name{
+  height: 70rpx;
+  line-height: 80rpx
+}
+.touxiang {
+  margin: auto;
+  overflow: hidden;
+  /* margin-top: 20rpx; */
+  margin-bottom: 20rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); */
+}
+.touxiang image{
+  width: 160rpx;
+  height: 160rpx
+}
+
+/* 导航 */
+.navigation{
+  width: 95%;
+  margin:20rpx auto;
+  height: 150rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 28rpx;
+  /* line-height: 150rpx; */
+}
+.navigation_list{
+  flex: 1;
+  height: 100rpx;
+  padding: 10rpx;
+  position: relative;
+  margin-left: -10rpx;
+}
+.list_left{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 40rpx;
+}
+.list_right{
+  position: absolute;
+  left: 85rpx;
+  top: 35rpx;
+  height: 100rpx;
+  
+}
+.list_shuxian{
+  height: 100rpx;
+  border: 1px solid #ccc;
+  margin: 20rpx;
+}
+
+/* 列表 */
+.liebiao {
+  background-color: white;
+  margin-top: 30rpx;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  padding: 10rpx;
+  border-bottom: 5rpx solid #e6e3e3;
+  justify-content: space-between;
+}
+
+.box1 {
+  /* background-color: #e0f5ff; */
+  display: flex;
+  flex-direction: row;
+  text-indent: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+
+.box1 text {
+  margin: 0 60rpx;
+  font-size: 25rpx;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+}
+
+.mine_img {
+  width: 80rpx;
+  height: 80rpx;
+  margin:10rpx 30rpx;
+}
+.icon{
+	width: 50rpx;
+	height: 50rpx;
+	margin-top: 15rpx;
+}
+
+/* 导航栏 */
+.header {
+  position: relative;
+  height:300rpx;
+  background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+}
+
+.bg_ware {
+  position: absolute;
+  left: 0px;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;
+  height: 120rpx;
+}
+

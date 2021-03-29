@@ -1,0 +1,11 @@
+  <block wx:for="{{dataList}}" wx:key="index">
+    <view class="box" bindtap="go" data-id="{{item}}">
+      <view class="title">{{item.gangwei}}</view>
+          <view class="line"></view>
+      <view class="location">地点:{{item.didian}}</view>
+      <view class="bottom">
+        <view class="location">要求:{{item.yaoqiu}}</view>
+        <view class="price">{{item.daiyu}}</view>
+      </view>
+    </view>
+  </block>

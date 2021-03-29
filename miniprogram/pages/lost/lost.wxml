@@ -1,0 +1,88 @@
+<view>
+  <view class="tab-h">
+    <view class="tab-item {{page==0?'active':''}}" data-page="0" bindtap="swichNav">失物墙</view>
+    <view class="tab-item {{page==1?'active':''}}" data-page="1" bindtap="swichNav">拾物墙</view>
+  </view>
+  <swiper current="{{page}}" duration="300" bindchange="switchTab">
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:100%">
+        <block wx:for="{{dataList}}" wx:key='index'>
+          <view class="box">
+            <view class="top">
+              <view class="top">
+                <image class="touxiang" src="{{item.touxiang}}"></image>
+                <view class="title">{{item.userName}}</view>
+              </view>
+              <view class="top">
+                <image class="call" src="../../images/call.png" bindtap="call" data-call="{{item}}"></image>
+                <image class="call" src="../../images/wechat.png" bindtap="wechat" data-wechat="{{item}}"></image>
+              </view>
+            </view>
+            <view class="line"></view>
+            <view class="info">
+              <text>物品：{{item.name}}</text>
+            </view>
+            <view class="info">
+              <text>{{item.info}}</text>
+            </view>
+            <scroll-view scroll-x="true" class="img_box">
+              <block wx:key="index" wx:for="{{item.fileIDs}}" wx:for-item="itemImg">
+                <image class='img' src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+              </block>
+            </scroll-view>
+            <view class="box_bottom" wx:if="{{openid==item._openid}}">
+              <view class="delete" bindtap="delete" data-t="{{item}}">删除</view>
+              <view class="time">{{item.sendTime}}</view>
+            </view>
+            <view class="time" wx:else>{{item.sendTime}}</view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <scroll-view scroll-y="true" style="height:100%">
+        <block wx:for="{{dataList1}}" wx:key='index'>
+          <view class="box">
+            <view class="top">
+              <view class="top">
+                <image class="touxiang" src="{{item.touxiang}}"></image>
+                <view class="title">{{item.userName}}</view>
+              </view>
+              <view class="top">
+                <image class="call" src="../../images/call.png" bindtap="call" data-call="{{item}}"></image>
+                <image class="call" src="../../images/wechat.png" bindtap="wechat" data-wechat="{{item}}"></image>
+              </view>
+            </view>
+            <view class="line"></view>
+            <view class="info">
+              <text>物品：{{item.name}}</text>
+            </view>
+            <view class="info">
+              <text>{{item.info}}</text>
+            </view>
+            <scroll-view scroll-x="true" class="img_box">
+              <block wx:key="index" wx:for="{{item.fileIDs}}" wx:for-item="itemImg">
+                <image class='img' src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+              </block>
+            </scroll-view>
+            <view class="box_bottom" wx:if="{{openid==item._openid}}">
+              <view class="delete" bindtap="delete1" data-t="{{item}}">删除</view>
+              <view class="time">{{item.sendTime}}</view>
+            </view>
+            <view class="time" wx:else>{{item.sendTime}}</view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>
+<image class="send" src="../../images/biaobai/send.png" bindtap="send"></image>
+<block wx:if="{{isSend}}">
+  <view class="show_send"  bindtap="back">
+    <view class="bg"></view>
+    <view class="show_button">
+      <button catchtap="send_lost">我丢东西了</button>
+      <button catchtap="send_found">我捡东西了</button>
+    </view>
+  </view>
+</block>

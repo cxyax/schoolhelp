@@ -1,0 +1,25 @@
+<block wx:for="{{dataList}}" wx:key="index">
+  <view bindtap="go" data-id="{{item}}">
+    <view class="box">
+      <view class="top">
+        <view class="title">{{item.name}}</view>
+        <view class="price">{{item.price}}</view>
+      </view>
+      <view class="line"></view>
+      <view class="info">
+        <text>{{item.info}}</text>
+      </view>
+      <scroll-view scroll-x="true" class="img_box">
+        <block wx:key="index" wx:for="{{item.fileIDs}}">
+          <image class='img' src='{{item}}' mode='aspectFill'></image>
+        </block>
+      </scroll-view>
+      <view class="box_bottom" wx:if="{{openid==item._openid}}">
+        <view class="delete" catchtap="delete" data-t="{{item}}">删除</view>
+        <view class="time">{{item.sendTime}}</view>
+      </view>
+      <view class="time" wx:else>{{item.sendTime}}</view>
+    </view>
+  </view>
+</block>
+<image class="send" src="../../images/biaobai/send.png" bindtap="send"></image>

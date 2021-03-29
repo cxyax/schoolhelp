@@ -1,0 +1,30 @@
+<view class="all">
+  <swiper autoplay="true" interval="5000">
+    <swiper-item>
+      <image src="https://s4.ax1x.com/2021/03/20/6hPacj.jpg"></image>
+    </swiper-item>
+    <!-- <swiper-item>
+      <image src="https://s3.ax1x.com/2021/02/03/yl97DJ.png"></image>
+    </swiper-item> -->
+  </swiper>
+  <view class="line">
+    <view class="box" bindtap="biaobai">
+      <image src="../../images/biaobai.png"></image>
+      <view>表白墙</view>
+    </view>
+    <view class="box" bindtap="lost">
+      <image src="../../images/lost.png"></image>
+      <view>失物招领</view>
+    </view>
+  </view>
+  <view class="line">
+    <view class="box" bindtap="work">
+      <image src="../../images/work.png"></image>
+      <view>兼职</view>
+    </view>
+    <view class="box" bindtap="xianzhi">
+      <image src="../../images/xianzhi.png"></image>
+      <view>闲置买卖</view>
+    </view>
+  </view>
+</view>

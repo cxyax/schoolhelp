@@ -1,0 +1,81 @@
+<view class="header">
+  <image class="bg_ware" src="https://moyv.top/wechat/images/bg_wave.gif"></image>
+  <view class="info">
+    <view class="touxiang" wx:if="{{login}}">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+          
+    <image class="touxiang mine_img" src="../../images/unlogin.png" wx:else></image>
+    <view class="name" wx:if="{{login}}">
+      <open-data type="userNickName"></open-data>
+    </view>
+    <view wx:else>
+      <button wx:if="{{canIUse&&!login}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+      <view wx:else>请升级微信版本</view>
+    </view>
+  </view>
+</view>
+<view class="bg">
+  <!--快捷导航-->
+  <view class="navigation">
+    <view class="navigation_list" style="margin-left:10rpx">
+      <image src="/images/biaobai.png" class="list_left"></image>
+      <view class="list_right">
+        <view style="font-weight: bold;">表白墙</view>
+        <text>发布{{biaobai}}</text>
+      </view>
+    </view>
+    <view class="list_shuxian"></view>
+    <view class="navigation_list">
+      <image src="/images/xianzhi.png" class="list_left"></image>
+      <view class="list_right">
+        <view style="font-weight: bold;">闲置物品</view>
+        <text>发布{{xianzhi}}</text>
+      </view>
+    </view>
+    <view class="list_shuxian"></view>
+    <view class="navigation_list">
+      <image src="/images/lost.png" class="list_left"></image>
+      <view class="list_right">
+        <view style="font-weight: bold;">失物招领</view>
+        <text>失{{lost}}，拾{{found}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 列表 -->
+  <view class="liebiao">
+    <view class="box" bindtap="fabu">
+      <view class="left">
+        <image src="../../images/send.png" class="icon mine_img"></image>
+        <view style="line-height:80rpx;">我发布的</view>
+      </view>
+      <image class="icon mine_img" src="{{fabu?down:right}}"></image>
+    </view>
+    <block wx:if="{{fabu}}">
+      <view class="box1">表白墙
+        <text>发布{{biaobai}}</text>
+      </view>
+      <view class="box1">闲置物品
+        <text>发布{{xianzhi}}</text>
+      </view>
+      <view class="box1">失物招领
+        <text>发布失物{{lost}},拾物{{found}}</text>
+      </view>
+    </block>
+    <view class="box" style="border-top: {{fabu?'2rpx solid #ccc':''}};" bindtap="previewImg">
+      <view class="left">
+        <image src="../../images/yijian.png" class="icon mine_img"></image>
+        <view style="line-height:80rpx;">意见反馈</view>
+      </view>
+    </view>
+    <view class="box" style="border-top: {{fabu?'1rpx solid #ccc':''}};" bindtap="about">
+      <view class="left">
+        <image src="../../images/about.png" class="icon mine_img"></image>
+        <view style="line-height:80rpx;">关于我们</view>
+      </view>
+    </view>
+  </view>
+  <view class="botton" style="text-align:center;color:rgb(139, 138, 138);margin-top:20rpx">
+    <text>-- 我是有底线的 --</text>
+  </view>
+</view>

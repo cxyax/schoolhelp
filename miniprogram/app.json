@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/work/work",
+    "pages/temp/temp",
+    "pages/biaobai/biaobai",
+    "pages/mine/mine",
+    "pages/mine/about/about",
+    "pages/lost/lost",
+    "pages/xianzhi/xianzhi",
+    "pages/send/send"
+  ],
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#00a8f3",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine1.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#00a8f3",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
