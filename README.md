@@ -5,7 +5,7 @@
 
 ## 开发初衷
 开发本小程序的初衷是适应主小程序（校园骑士综合服务）
-<img src="https://z3.ax1x.com/2021/03/29/cPtiLT.png">
+<img src="https://z3.ax1x.com/2021/03/29/cPtiLT.png"><br>
 
 ## 基于云开发（参考文档）
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
